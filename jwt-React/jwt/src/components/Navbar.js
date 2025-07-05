@@ -8,6 +8,8 @@ const Navbar = ({ token, handleLogout }) => {
       <Link to="/register" style={{ marginRight: '10px' }}>Sign Up</Link>
       {!token && <Link to="/login" style={{ marginRight: '10px' }}>Login</Link>}
       <Link to="/users" style={{ marginRight: '10px' }}>All Users</Link>
+      <Link to="/notes" style={{ marginRight: '10px' }}>Save Note</Link>
+      <Link to="/mynotes" style={{ marginRight: '10px' }}>My Notes</Link>
       {token && <button onClick={handleLogout}>Logout</button>}
     </nav>
   );
